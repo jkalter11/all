@@ -1,115 +1,99 @@
-<h1 align="center">Android IMSI-Catcher Detector</h1>
+# bitcoin-hackathon
 
-<p align="center">
-  <a target="_blank" href="https://travis-ci.org/CellularPrivacy/Android-IMSI-Catcher-Detector"><img src="https://travis-ci.org/CellularPrivacy/Android-IMSI-Catcher-Detector.svg"></a>
-  <a target="_blank" href="https://scan.coverity.com/projects/3346"><img src="https://scan.coverity.com/projects/3346/badge.svg"></a>
-  <a target="_blank" href="https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Development-Status"><img src="https://img.shields.io/badge/Development-ALPHA-blue.svg"></a>
-  <a target="_blank" href="https://hosted.weblate.org/projects/aimsicd/strings/"><img src="https://hosted.weblate.org/widgets/aimsicd/-/svg-badge.svg"></a>
-  <a target="_blank" href="https://www.bountysource.com/teams/android-imsi-catcher-detector/issues?utm_source=Android%20IMSI-Catcher%20Detector&utm_medium=shield&utm_campaign=bounties_received"><img src="https://www.bountysource.com/badge/team?team_id=40338&style=bounties_received"></a>
-  <a target="_blank" href="https://gitter.im/CellularPrivacy/Android-IMSI-Catcher-Detector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/CellularPrivacy/Android-IMSI-Catcher-Detector.svg"></a>
-</p>
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/baleato/bitcoin-hackathon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
- <br /> <br />
-<h2>This Project will have a revival soon. <br />
-We are working on a light version of AIMSICD.</h2>
-<a href="https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/926">more information</a>
+Project NoRiskWallet
+====================
 
----
+The problem
+-----------
 
-`AIMSICD` is an Android app to detect [IMSI-Catchers](https://en.wikipedia.org/wiki/IMSI-catcher). These devices are false mobile towers (base stations) acting between the target mobile phone(s) and the real towers of service providers. As such they are considered a Man-In-The-Middle (MITM) attack. This surveillance technology is also known as "[StingRay](https://en.wikipedia.org/wiki/Stingray_phone_tracker)", "Cellular Interception" and alike. Find out more in our [Wiki on GitHub](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki).
+- As a user I want to buy a movie and start watching it immediately
+- As a merchant I want to sell a movie and receive the payment instantly without trusting any third party or any risk of charge back or double spend
 
----
 
-[![Banner](https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/PROMOTION/AIMSICD-Banner_Large.png)](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Status-Icons)
+Current solutions
+-----------------
 
----
+- Bitcoin payments can not be trusted until they receive at least 1 confirmation in the blockchain (10 mins on average).
+- Paypal and credit cards can always do a charge back and revoke the payment, even weeks after the transaction took place.
 
-[![Teaser](https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/PROMOTION/AIMSICD-Teaser.png)](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki)
 
----
+NoRiskWallet solution
+---------------------
 
-<p align="center">
-  <a target="_blank" href="http://aimsicd.store.aptoide.com/"><img src="https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/MISC/external/Aptoide.png"></a>
-  <a target="_blank" href="https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/releases"><img src="https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/MISC/external/GitHub.png"></a>
-  <a target="_blank" href="https://f-droid.org/repository/browse/?fdid=com.SecUpwN.AIMSICD"><img src="https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/MISC/external/F-Droid.png"></a>
-  <a target="_blank" href="https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/FAQ#q-why-wont-you-upload-your-app-to-the-google-play-store"><img src="https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/MISC/external/NoGooglePlay.png"></a>
-  <a target="_blank" href="https://twitter.com/AIMSICD"><img src="https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/MISC/external/Twitter.png"></a>
-</p>
+With NoRiskWallet you can fund a risk free wallet and all the money that you don't spend -after a deadline you set some time in the future-, it will return to you.
 
----
+Now merchants can establish zero trust relations with NoRiskWallet to accept 0 confirmation transactions.
 
-### Index
+You can pay any merchant that has a NoRiskWallet instantly and with no risk.
 
-* [What it does](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector#what-it-does)
-* [Why use it](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector#why-use-it)
-* [**Contributing**](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/development/.github/CONTRIBUTING.md)
-* [Bug Tracker](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/development/.github/CONTRIBUTING.md#debugging)
-* [Warnings](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector#warnings)
-* [Research](https://spideroak.com/browse/share/AIMSICD/GitHub)
-* [Support](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector#support)
-* [Contact](https://github.com/orgs/CellularPrivacy/people)
-* [Wiki](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki)
-* [FAQ](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/FAQ)
 
----
+Extras
+------
 
-[![IMSI-Catchers](https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/DOCUMENTATION/IMSI-Catchers/IMSI-Catchers.png)](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki)
+- NoRiskWallet has to put a collateral with the merchants that is at least as big as the funding users have in their NoRiskWallet
+- Funds from NoRiskWallet and customer are locked in multisignature addresses until the funds are spent or, in the worst case, until deadline set by the user is reached and funds are returned to original owners.
 
-### What it does
 
-`AIMSICD` attempts to detect IMSI-Catchers through [detection methods](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/230) such as these:
-    
-* Check [Tower Information Consistency](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/253)
-* Check [LAC/Cell ID Consistency](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/91)
-* Check [Neighboring Cell Info](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/264)
-* Prevent [silent app installations](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/151)
-* Monitor [Signal Strength](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/97)
-* Detect [silent SMS](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/glossary-of-terms#silent-sms)
-* Detect [FemtoCells](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/issues/6)
+Implementation details
+----------------------
 
-Make sure to see our [app goals](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Development-Status#application-goals) and [development status](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Development-Status) as well as [technical overview](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Technical-Overview).
+The system is based on Bitcoin multisignature addresses (2 of 2), used between customer and NoRiskWallet and between NoRiskWallet and merchant.
 
----
+Both users and merchants establish a payment channel with NoRiskWallet.
 
-### Why use it
+The user locks for sometime an amount that (s)he is willing to spend(partially or totally).
 
-The FBI or local police regularly deploys IMSI-Catchers hidden in vehicles at protests to obtain a record of everyone who attended with a cell phone (leave your phones at home by all means if you really have to attend). IMSI-Catchers also allow adversaries to intercept your conversations, text messages, and data. Police can use them to determine your location or to find out who is in a given geographic area at what time. Identity thieves can use freely [available tools](http://www.nsaplayset.org/) and even [build their own rogue GSM BTS](https://evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/) to monitor and manipulate communications from a parked car in your residential neighborhood - notably for stealing passwords or credit card data from people nearby who make purchases on their phones. The reason IMSI-Catchers are so commonly used is that it is very easy to get away with using them since they leave no traces. Our app aims to make it possible to detect the IMSI-Catchers so that using them becomes a risky proposition. It also aims to make users safer by alerting on possible interception and tracking. Fight for your privacy!
+The merchant agrees to have a payment channel with NoRiskWallet where NoRiskWallet locks some funds for a limited period of time.
 
----
+After payment channels are opened and confirmed in the bictoin blockchain a user can safely create, in collaboration with merchant and NoRiskWallet, two Bitcoin transactions that depend on each other and have to be signed in an specific order to:
 
-### Warnings
+1. pay the merchant without possibility of being double spend (without the merchant's signature)
+2. return the NoRiskWallet locked collateral without possibility of loosing funds
+3. customer having the final word in approving the whole chain of transactions
 
-[![Warning](https://spideroak.com/share/IFEU2U2JINCA/GitHub/home/SecUpwN/SpiderOak/DOCUMENTATION/Warning.png)](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Development-Status)
+The trust is not required in the system because each player has different punishments or limitations to bad behaviour:
+- For customer(A) to cheat and revert a payment to merchant(C) it requires our wallet(B) to sign contradicting transactions
+- If our wallet(B) signs contradicting transactions to help customer(A), the merchant(C) will still receive the agreed payment, but instead of receiving the funds from A, the funds will be from B's collateral. So B is discouraged to help A.
+- For merchant(C) to receive a payment from customer(A), it requires signatures from our wallet(B) and from A, so it's impossible that B or C get funds from A without A's approval.
 
-Please read our [Disclaimer](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/master/DISCLAIMER)! This app does **not**:
+The transactions should follow the flows described in the diagrams below:
 
-* Provide secure phone calls
-* Provide secure data transmission
-* Provide app permission control
-* Provide secure application sand-boxing
-* Provide [ROOT](http://www.xda-developers.com/root) and remove bloatware
-* Provide secure SMS
-* Provide firewalls
-* Provide full device encryption
-* Prevent already installed rogue apps from full access and spying
+![alt text](images/Account charging.png "Customer charging the NoRiskWallet")
+![alt text](images/seller connection.png "Seller establishing payment channel with NoRiskWallet")
+![alt text](images/buy process.png "Customer buying from Seller using NoRiskWallet")
 
-Solutions for the above may be found in our [Recommendations](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Recommendations).
 
----
+Payment diagram(alternative representation):
+![alt text](images/diagrams/transactions.jpg "Paymen diagram")
 
-### Bug Tracker
+Terminology
+- **A**: Customer, **B**: NoRiskWallet and **C**: Merchant
+- **M1**: Is a multisignature bitcoin address that requires 2 of 2 signatures to move funds, with signatures from Customer(A) and NoRiskWallet(B)
+- **M2**: Is a multisignature bitcoin address that requires 2 of 2 signatures to move funds, with signatures from NoRiskWallet(B) and Merchant(C)
 
-Please follow our [Bug Submission Guide](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/development/CONTRIBUTING.md#debugging).
+To perform a payment this is the exact order in which the transactions need to be signed:
 
----
+1. **Merchant(C)** signs transactions **Y** and **Z** from M2
+2. **NoRiskWallet(B)** signs transaction **Y** from M2 and **X** from M1
+3. **Customer(A)** signs transaction **X** from M1
+4. **NoRiskWallet(B)** signs transaction **Z** from M2
 
-### Support
+Notes:
 
-Although our app is fully Open Source, developing it is a lot of work and done by privacy enthusiasts during their free time. If you're a developer yourself, we welcome and credit your [pull requests](https://help.github.com/articles/using-pull-requests/)! To keep developers in a great mood and support development, please consider making a [donation](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/wiki/Donations). It will be split into pieces and directly sent to developers who solved the backed Issue.
+- After point 3 is completed, the payment is ready but not yet confirmed in the Bitcoin blockchain, A could still double spent transaction X with the help of B and make transaction Y invalid. Step 4 is the insurance for C
+- Transaction Z depends on inputs from M
+- Transaction Y depends on inputs from M and X
+- Transaction X depends on inputs from N
+- Transaction K depends on inputs from M
+- Transaction J depends on inputs from N
 
----
+**Detailed explanations** of how to implement the transactions can be found in the [Transactions Documentation](TRANSACTIONS_DOCUMENTATION.md)
 
-### License
+Front end mockups
+-----------------
 
-[![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/master/LICENSE)
-Please [contribute](https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector/blob/development/.github/CONTRIBUTING.md) to this repository instead of rebranding our app. Thank you!
+![alt text](images/mockups/create-wallet.jpg "Create a NoRiskWallet")
+![alt text](images/mockups/configure-wallet.jpg "Configure a NoRiskWallet")
+![alt text](images/mockups/wallet-state.jpg "Check NoRiskWallet transactions")

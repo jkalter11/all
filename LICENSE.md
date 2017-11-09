@@ -1,6 +1,6 @@
-MIT License
+The MIT License (MIT)
 
-Copyright (c) 2016 David A
+Copyright (c) 2015 RiskFreebit
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
